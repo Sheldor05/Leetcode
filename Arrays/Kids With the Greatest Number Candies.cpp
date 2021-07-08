@@ -15,7 +15,7 @@ public:
     vector<bool> result (n);
     for ( int i = 0; i < n; i++)
     {
-        result[i] = (candies [i] + extraCandies >= max);
+        result[i] = (candies [i] + extraCandies >= max); // result is bool max is int
 
     }
         return result;
