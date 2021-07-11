@@ -18,3 +18,15 @@ public:
         
     }
 };
+//Solution 2
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+     int ans = INT_MIN;
+        for (auto v : accounts)
+        {
+            ans = max(ans,accumulate(v.begin(),v.end(),0));
+        }
+        return ans;
+    }
+};
