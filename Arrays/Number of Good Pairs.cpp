@@ -27,7 +27,9 @@ public:
     
 }
 // 2 solution
-lass Solution {
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
 public:
     int numIdenticalPairs(vector<int>& nums) {
         int res = 0;
